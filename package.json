@@ -4,7 +4,7 @@
   "description": "connect middleware for server sent events (EventSource)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,9 @@
     "events"
   ],
   "author": "Andrew Kelley",
-  "license": "BSD"
+  "license": "BSD",
+  "devDependencies": {
+    "eventsource": "0.0.5",
+    "express": "~3.0.0rc5"
+  }
 }
