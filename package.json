@@ -1,0 +1,26 @@
+{
+  "name": "connect-sse",
+  "version": "0.0.0",
+  "description": "connect middleware for server sent events (EventSource)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/superjoe30/connect-sse"
+  },
+  "keywords": [
+    "connect",
+    "sse",
+    "middleware",
+    "eventsource",
+    "event",
+    "source",
+    "server",
+    "sent",
+    "events"
+  ],
+  "author": "Andrew Kelley",
+  "license": "BSD"
+}
