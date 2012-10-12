@@ -1,6 +1,6 @@
 {
   "name": "connect-sse",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "connect middleware for server sent events (EventSource)",
   "main": "index.js",
   "scripts": {
@@ -23,6 +23,9 @@
   ],
   "author": "Andrew Kelley",
   "license": "BSD",
+  "engines": {
+    "node": ">=0.6.0 <=0.10.0"
+  },
   "devDependencies": {
     "eventsource": "0.0.5",
     "express": "~3.0.0rc5"
