@@ -1,6 +1,6 @@
 {
   "name": "connect-sse",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "connect middleware for server sent events (EventSource)",
   "main": "index.js",
   "scripts": {
