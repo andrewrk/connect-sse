@@ -24,7 +24,7 @@
   "author": "Andrew Kelley",
   "license": "BSD",
   "engines": {
-    "node": ">=0.8.16 <=0.10.0"
+    "node": ">=0.8.16"
   },
   "devDependencies": {
     "eventsource": "0.0.5",
