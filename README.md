@@ -3,13 +3,11 @@
 Usage:
 ------
 
-```javascript
-var sse, express, app;
+```js
+var sse = require('connect-sse')();
+var express = require('express')
 
-sse = require('connect-sse')();
-express = require('express')
-
-app = express()
+var app = express()
 app.get('/events', sse, function (req, res) {
   res.json("this is an event");
   res.json({here: "is", another: "event"});
