@@ -27,8 +27,8 @@
     "node": ">=0.10.0"
   },
   "devDependencies": {
-    "eventsource": "0.0.5",
-    "express": "~3.0.0rc5"
+    "eventsource": "~0.1.2",
+    "express": "~4.8.8"
   },
   "bugs": {
     "url": "https://github.com/andrewrk/connect-sse/issues"
