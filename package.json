@@ -22,12 +22,15 @@
     "events"
   ],
   "author": "Andrew Kelley",
-  "license": "BSD",
+  "license": "MIT",
   "engines": {
     "node": ">=0.8.16"
   },
   "devDependencies": {
     "eventsource": "0.0.5",
     "express": "~3.0.0rc5"
+  },
+  "bugs": {
+    "url": "https://github.com/andrewrk/connect-sse/issues"
   }
 }
