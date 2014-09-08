@@ -1,4 +1,4 @@
-[![Build Status](https://secure.travis-ci.org/superjoe30/connect-sse.png)](http://travis-ci.org/superjoe30/connect-sse)
+[![Build Status](https://secure.travis-ci.org/andrewrk/connect-sse.png)](http://travis-ci.org/andrewrk/connect-sse)
 
 Usage:
 ------
