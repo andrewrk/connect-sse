@@ -1,7 +1,7 @@
 module.exports = function () {
   return function sse(req, resp, next){
     var message_count;
-    req.socket.setTimeout(Infinity);
+    req.socket.setTimeout(0);
     resp.statusCode = 200;
     resp.setHeader('Content-Type', 'text/event-stream');
     resp.setHeader('Cache-Control', 'no-cache');
