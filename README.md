@@ -11,5 +11,6 @@ var app = express()
 app.get('/events', sse, function (req, res) {
   res.json("this is an event");
   res.json({here: "is", another: "event"});
+  res.json({here: "is a named event", to: "listen with addEventListener('example', function(){})"}, "example");
 });
 ```

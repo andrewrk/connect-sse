@@ -13,6 +13,7 @@ app.get('/events', sse, function (req, res) {
   res.json("this is an event");
   setTimeout(function() {
     res.json({here: "is", another: "event"});
+    res.json({here: "is a named event", to: "listen with addEventListener('example', function(){})"}, "example");
   }, 100);
 });
 
@@ -37,8 +38,18 @@ server.listen(0, 'localhost', function() {
       assert(msg.here === "is");
       assert(msg.another === "event");
     },
+    function (msg) {
+      assert(msg.here === "is a named event");
+      assert(msg.to === "listen with addEventListener('example', function(){})");
+    }
   ];
   source.onmessage = function(e) {
+    var validate;
+    validate = message_validators.shift();
+    validate(JSON.parse(e.data));
+    process.stdout.write('.');
+  };
+  source.addEventListener("example", function(e) {
     var validate;
     validate = message_validators.shift();
     validate(JSON.parse(e.data));
@@ -48,5 +59,5 @@ server.listen(0, 'localhost', function() {
       source.close();
       server.close();
     }
-  };
-})
+  });
+});
