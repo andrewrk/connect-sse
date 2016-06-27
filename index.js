@@ -7,8 +7,12 @@ module.exports = function () {
     resp.setHeader('Cache-Control', 'no-cache');
     resp.setHeader('Connection', 'keep-alive');
     message_count = 0;
-    resp.json = function(obj, type){
-      resp.write("id: " + message_count + "\n");
+    resp.json = function(obj, type, id){
+      if('number' === typeof id  || 'string' === typeof id) {
+        resp.write("id: " + id + "\n");
+      } else {
+        resp.write("id: " + message_count + "\n");
+      }
       if('string' === typeof type) {
         resp.write("event: " + type + "\n");
       }
